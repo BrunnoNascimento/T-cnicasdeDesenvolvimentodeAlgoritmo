@@ -1,0 +1,18 @@
+inicio
+inteiro notaA1
+	escreva("Digite a sua nota A1: ")
+	leia(notaA1)
+	se(notaA1 < 3) entao
+		imprima("conceito E")
+		senao se(notaA1 >= 3 E notaA1 <= 5) entao
+			imprima("conceito D")
+		senao se(notaA1 >= 6 E notaA1 <= 7) entao
+			imprima("conceito C")
+		senao se(notaA1 >= 8 E notaA1 <= 9) entao
+			imprima("conceito B")
+		senao se(notaA1 = 10) entao
+			imprima("conceito A")
+		senao
+			imprima("Nota invalida")
+	fim_se
+fim

@@ -1,0 +1,87 @@
+1- algoritimo taxa_consumo
+
+inicio
+	real: km_Anterior, km_Atual, litros, taxa_consumo
+
+	escreva("Digite a quilometragem anterior")
+	leia(km_Anterior)
+	escreva("Digite a quilometragem atual")
+	leia(km_Atual)
+	escreva("Digite os litros gastos")
+	leia(litros)
+	taxa_consumo = (km_Anterior-km_Atual)/litros
+	imrpima("Sua taxa de consumo: " + taxa_consumo)
+
+
+fim
+
+
+2- algoritimo latao
+
+inicio
+	real: latas, cobre, zinco
+
+	escreva("Digite a quantidade de latas desejada")
+	leia(latas)
+	cobre = latas*0,7
+	zinco = latas*0,3
+	imrpima("A quantidade de cobre: " + cobre + "já a quantidade de zinco é de: " + zinco)
+fim
+	
+
+Usando Estrutura de Decisão:
+
+
+5 - algoritmo peso_ideal
+
+inicio
+	real: altura, calculo
+	caracter: sexo
+	
+	escreva("Digite a sua altura: ")
+	leia(altura)
+	escreva("Digite o seu sexo: Masculino(m), Feminino(f)")
+	leia(sexo)
+	se(sexo == "M" OU sexo == "m") entao
+		calculo = ((72.7*altura) -  58)
+	senao se(sexo == "F" OU sexo == "f") entao
+		calculo = ((62.1*altura)- 44.7)
+	fim_se
+ 	imprima("Seu peso ideal é de" + calculo")
+fim	
+
+
+
+6 - algoritmo hotel
+
+inicio
+	real: idade, sexo, calculo
+	
+	escreva("Digite a sua idade:")
+	leia(idade)
+	escreva("Digite o seu sexo: Masculino(1), Feminino(2)")
+	leia(sexo)
+	se (sexo == 1) entao
+		se(idade <= 12) entao
+			imprima("O preço a ser pago será de: R$21,50") 
+	senao se (sexo == 2) entao
+		se(idade <= 12) entao
+			imprima("O preço a ser pago será de: R$19,50") 
+	fim_se
+	
+	senao se(sexo == 1)entao
+		se (idade >= 12 E <=55)entao
+			imprima("O preço a ser pago será de: R$53,99")
+	senao se(sexo == 2)entao
+		se (idade >= 12 E <=55)entao
+			imprima("O preço a ser pago será de: R$60,30")
+	fim_se
+
+	senao se(sexo == 1)entao
+		se (idade > 55)entao
+			imprima("O preço a ser pago será de: R$40,00")
+	senao se(sexo == 2)entao
+		se (idade > 55)entao
+			imprima("O preço a ser pago será de: R$45,50")
+	fim_se
+fim

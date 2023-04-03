@@ -1,0 +1,81 @@
+1- algoritmo calculo_raizes_atualizado
+
+inicio 
+         real: a,b,c,delta, x1, x2
+         escreva ("digite o valor a:")
+         leia (a)
+         escreva ("digite o valor b:")
+         leia (b)
+         escreva ("digite o valor c:")
+         leia(c)
+         delta <---  (b * b - 4 * a * c)
+         se (delta > 0) entao 
+               x1 <---  (-b - raiz(delta))/2*a)
+               x2 <---  (-b + raiz(delta))/2*a)
+               escreva ("O valor de x¹ e: " + x1 +                      
+               "O valor de x² e: " + x2 )
+         senão
+                escreva("Erro, o numero de
+                delta deve ser positivo")          
+         fim_se
+         
+fim
+
+
+2- algoritmo preço_parcelado
+
+inicio
+         real: preco, pagar, preco_final
+         inteiro: parcelas, juros
+         escreva ("digite o preco:")
+         leia (preco)
+         escreva ("digite a quantidade de
+         parcelas:")
+         leia (parcelas)
+         escolha(parcelas)
+                   caso 1:
+                            juros = 0
+                   caso 2:
+                            juros = 10
+                   caso 3:
+                            juros = 10
+                   caso >= 4:
+                            juros = 20
+                   senão
+                            juros = -1
+        fim_escolha 
+        se (juros == -1) entao 
+                    escreva ("Quantidade de
+                    parcelas invalida")
+        senao 
+                   preco_final <---preco+preco*
+                   juros/100
+                   escreva ("O preco total de 
+                   acordo com as parcelas e de:" 
+                   +  preco_final)
+        fim_escolha
+fim
+
+
+3- algoritmo calculo_de_cargo
+
+inicio
+         real: salario, aumento1, aumento2
+         inteiro: codigo, percentual
+         escreva ("Digite seu codigo de
+         cargo 1 ou 2: ")
+         leia (codigo)
+         escreva ("Digite seu salario atual: ")
+         leia (salario)
+         se (codigo == 1) entao 
+               aumento1 <--- (20/100*salario) +
+               salario 
+               escreva("O seu salario atual e
+               de: " + aumento1)
+        senão 
+               aumento2 <--- (10/100*salario) +
+               salario
+               escreva ("O seu salario atual e
+               de: " + aumento2)
+        fim_se
+fim

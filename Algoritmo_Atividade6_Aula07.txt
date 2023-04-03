@@ -1,0 +1,116 @@
+1- Escreva um algoritmo que leia a quantidade de valores que serão processados, depois leia os valores e calcule a média dos mesmos. Utilize a estrutura de repetição PARA.
+
+algoritmo media_alg
+real: v, m
+caractere: cont
+
+inicio 
+m = 0
+cont = "sim"
+para(cont=0; cont="sim"; cont=cont)
+      escreva("Entre com um   valor: ")
+      leia(v)
+      m = m + v
+      escreva("Continuar a    execução? (Sim ou Não)")
+      leia(cont)
+fim_para
+m = m / cont
+imprima("A média dos valores que o usuário inseriu é: " + m)
+fim
+
+2- Escreva um algoritmo que leia um grupo de valores (não sabemos quantos são) para calcular e visualizar a média desses valores e, também, determinar e visualizar o maior deles. Utilize uma estrutura de repetição ENQUANTO ou REPITA.
+
+algoritmo media_enquanto
+
+real v, m, n, maiorNumero
+caractere cont
+
+Inicio
+m = 0
+cont = "sim"
+maiorNumero = 0
+n = 0
+
+enquanto(cont = "sim")
+     escreve("Entre com um valor: ") 
+     leia(v)
+     n = n + 1
+      se(v > maiorNumero)
+           maiorNumero = v
+           m = m + v
+           escreva("Deseja    continuar?")
+           leia(cont)
+fim_enquanto
+m = m / n
+imprima("A média é: " + m + " e o maior número é: " + maiorNumero)
+fim
+
+3- Escreva um algoritmo que leia um grupo de valores reais e determine quantos valores são positivos e quantos são negativos. Determine, também, qual é o menor desses valores. Utilize o comando de repetição que deseje.
+
+
+algoritmo numeros_reais
+
+real: v, positivo, negativo, m,
+caractere: cont
+
+inicio
+
+positivo = 0
+negativo = 0
+m = 0
+cont = "sim"
+
+enquanto(cont = "sim")
+	escreva("Entre com um valor: ")
+	leia (v)
+	se(valor >= 0) entao
+		positivo = positivo + 1
+	senao
+		negativo = negativo - 1
+	fim_se
+	se(v < m) entao
+		m = v
+	fim_se
+	escreva("Deseja continuar? (sim/nao)")
+	leia(cont)
+fim_enquanto
+imprima("Números positivos: " + positivo + ", Negativos: " + negativo + "Menor número é: " + m)
+fim
+
+4- Temos um grupo de pessoas. Escreva um algoritmo que leia o sexo e a estatura de cada pessoa e determine e visualize a estatura média das mulheres. O algoritmo deverá, também, contar os homens nesse grupo. Utilize o comando de repetição que deseje.
+
+
+algoritmo pessoas
+
+real: h, m, altura_h, altura_m, media
+caractere: pessoas, cont
+
+inicio
+
+h = 0
+m = 0
+altura = 0
+media = 0
+cont = "sim"
+
+enquanto(cont = "sim")
+	escreva("Digite o sexo da pessoa: ")
+	leia(pessoas)
+	se(pessoas = "h") entao
+		escreva("Digite a altura da pessoa: ")
+		leia(altura_h)
+		h = h + 1
+	fim_se
+	se(pessoas = "mulher") entao
+		escreva("Digite a altura da pessoa: ")
+		leia(altura_m)
+		m = m + 1
+		media = media + altura_m
+	fim_se
+	escreva("Deseja continuar?
+	leia(cont)
+fim_enquanto
+
+media = altura_m/ m
+imprima("A quantidade de homens nesse grupo é de: " + h + ", e a altura média das mulheres é: " + media)
+fim

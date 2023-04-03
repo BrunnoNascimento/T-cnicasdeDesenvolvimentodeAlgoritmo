@@ -1,0 +1,50 @@
+Exercicio 1: 
+
+
+algoritmo valor_ao_cubo
+inteiro numero1
+real calculo
+inicio
+	escreva "Digite um valor (x):"
+	leia numero1
+	calculo (numero1*numero1*numero1)
+	impirma "O resultado é: " + calculo
+fim
+
+
+Exercicio 2:
+
+
+algoritmo calculo_do_imc
+real peso
+real altura
+real imc
+inicio
+	escreva "Digite o seu peso: "
+	leia peso
+	escreva "Digite a sua altura: "
+	leia altura
+	media (peso/(altura*altura))
+	imprima "O seu IMC é: " + imc
+fim
+
+Exercicio  3:
+
+
+algoritmo volume_do_cilindro
+real raio
+real altura
+real volume
+inicio
+	escreva "Digite o raio do cilindro: "
+	leia raio
+	escreva "Digite a altura do cilindro: "
+	leia altura
+	media (3.14*(raio*raio)*altura)
+	imprima "O volume do cilindro é de: " + volume
+fim
+
+
+
+
+	

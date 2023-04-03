@@ -1,0 +1,38 @@
+Exercicio 3 - Faca um algoritmo que leia dois valores inteiros representando, respectivamente, um valor de hora e um de minutos e informe quantos minutos se passaram desde o inicio do dia.
+
+
+algoritmo minutos_contados
+
+inicio
+
+  inteiro: h, m, valor
+  escreva ("Digite um valor em horas: ")
+  leia (h)
+  escreva ("Digite um valor em minutos: ")
+  leia (m)
+  valor <--- (h * 60 + m)
+  escreva ("Passaram se" + valor + "minutos desde o inicio do dia")
+
+fim
+
+
+
+
+
+
+
+
+Exercicio 5 - Faca um algoritmo que leia um valor representando o gasto realizado por um cliente do restaurante ComaBem e visualize o valor total a ser pago, considerando os 10% do garcom.
+
+
+algoritmo total_conta
+
+inicio
+
+  float: g, total
+  escreva ("Digite o gasto do cliente: ")
+  leia (g)
+  total <--- g + (g * 0.10)
+  imprima ("O valor total considerado os 10% do garçom é de: " + total)
+
+fim
